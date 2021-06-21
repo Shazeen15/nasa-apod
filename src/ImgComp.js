@@ -13,7 +13,6 @@ const ImgComp = (props) => {
       .get(`https://api.nasa.gov/planetary/apod?api_key=${api_key}`)
       .then((res) => {
         let info = res.data;
-        console.log(info);
         setImgInfo(info);
       })
       .catch((error) => {
